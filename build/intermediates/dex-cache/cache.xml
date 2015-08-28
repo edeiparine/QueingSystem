@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/pre-dexed/debug/classes-c5bed191b9d652d61be7171476c1871f57ef4acd.jar" />
+    </item>
+    <item
+        jar="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
+        <dex dex="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/pre-dexed/debug/classes-671cc576184b9c7e1d049463ee3ae7e9173c2175.jar" />
+    </item>
+    <item
+        jar="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/pre-dexed/debug/classes-0db575753bf08583ffe23fbea2180f75a80f43d7.jar" />
+    </item>
+    <item
+        jar="/Users/csi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-b75b43ac29ec032f2d8173a06476414d1f421352.jar" />
+    </item>
+    <item
+        jar="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/pre-dexed/debug/classes-f6f78d7a12e6c7c1fb856671a1a0dd48e3374c90.jar" />
+    </item>
+    <item
+        jar="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/pre-dexed/debug/classes-b7ed7a1e39b1409a8ff2e2e75ec7fabfdb9031bd.jar" />
+    </item>
+    <item
+        jar="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/csi/Desktop/Projects/AndroidProjects/QueingSystem/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-fecc7b1a180444b81533672b270d7b3b1c2b8832.jar" />
+    </item>
+
+</items>
