@@ -11,67 +11,75 @@
     tools:showIn="@layout/activity_main">
 
     <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/spinner"
-        android:spinnerMode="dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_alignParentTop="true"/>
+        android:spinnerMode="dialog" />
 
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/inputholder"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="SAVE" />
+        android:layout_below="@+id/spinner"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/loadButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/saveButton"
-        android:layout_alignStart="@+id/saveButton"
-        android:layout_below="@+id/saveButton"
-        android:text="LOAD" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:id="@+id/nameEditBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/emailEditBox"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/loadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/saveButton"
+            android:layout_alignStart="@+id/saveButton"
+            android:layout_below="@+id/saveButton"
+            android:text="LOAD" />
 
-    <EditText
-        android:id="@+id/emailEditBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/saveButton"
-        android:layout_alignLeft="@+id/nameEditBox"
-        android:layout_alignStart="@+id/nameEditBox"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/nameEditBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/loadButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/saveButton"
+            android:hint="name"
+            android:inputType="textPersonName" />
 
-    <Button
-        android:id="@+id/addButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ADD"
-        android:layout_above="@+id/nameEditBox"
-        android:layout_centerHorizontal="true" />
+        <EditText
+            android:id="@+id/emailEditBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/saveButton"
+            android:layout_toLeftOf="@+id/saveButton"
+            android:hint="email"
+            android:inputType="textEmailAddress" />
 
-    <TextView
-        android:id="@+id/addTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/addButton"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/addTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailEditBox"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-
-
-
+        <!--<ListView-->
+        <!--android:id="@+id/addTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/emailEditBox"-->
+        <!--android:layout_margin="5dp" />-->
+    </RelativeLayout>
 </RelativeLayout>
