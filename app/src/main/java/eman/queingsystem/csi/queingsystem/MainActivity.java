@@ -15,16 +15,21 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import eman.queingsystem.csi.queingsystem.data.DataHandler;
+
 
 public class MainActivity extends ActionBarActivity {
 
-    Button add, save, load;
+    Button save, load;
     EditText name, email;
     TextView addTextView;
 
     DataHandler handler;
 
     Spinner spinner;
+
+    final int count = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +63,6 @@ public class MainActivity extends ActionBarActivity {
 
     private void init() {
 
-        add = (Button) findViewById(R.id.addButton);
         save = (Button) findViewById(R.id.saveButton);
         load = (Button) findViewById(R.id.loadButton);
         name = (EditText) findViewById(R.id.nameEditBox);
@@ -67,38 +71,30 @@ public class MainActivity extends ActionBarActivity {
 
         addTextView = (TextView) findViewById(R.id.addTextView);
 
+
         final List addUser = new ArrayList();
-        final int count = 0;
-
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                addUser.add(count);
-                addTextView.setText("Your Queue Number is: " + addUser.size());
-//                Toast.makeText(getBaseContext(), "Number added: " + addUser.size(), Toast.LENGTH_SHORT).show();
-            }
-        });
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                addUser.add(count);
                 String getName = name.getText().toString();
                 String getEmail = email.getText().toString();
                 handler = new DataHandler(getBaseContext());
                 handler.open();
 
                 long id = handler.insertData(getName, getEmail);
-//                Toast.makeText(getBaseContext(), "Data inserted!", Toast.LENGTH_LONG).show();
-                Toast.makeText(getBaseContext(), "Name: " + getName + "\n" + "E-mail: " + getEmail, Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), "Name: " + getName + "\n" + "E-mail: " + getEmail, Toast.LENGTH_SHORT).show();
+                addTextView.setText("Your Queue Number is: " + addUser.size());
                 handler.close();
+
+                clearFields();
             }
         });
 
         load.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String getName, getEmail;
                 getName = "";
                 getEmail = "";
@@ -114,9 +110,13 @@ public class MainActivity extends ActionBarActivity {
                     } while (cursor.moveToNext());
                 }
                 handler.close();
-                Toast.makeText(getBaseContext(), "Name: " + getName + "\n" + "E-mail: " + getEmail, Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), "Name: " + getName + "\n" + "E-mail: " + getEmail, Toast.LENGTH_SHORT).show();
             }
         });
+    }
 
+    private void clearFields() {
+        name.setText("");
+        email.setText("");
     }
 }
